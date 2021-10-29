@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<!-- aos animation css link  -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -29,12 +31,12 @@
 			</p>
 			<a href="#" class="btn">Read More</a>
 		</div>
-		<div class="top-box top-box-a">
+		<div class="top-box top-box-a" data-aos="fade-left">
 			<h4>Membership</h4>
 			<p class="price">$149/mo</p>
 			<a href="#" class="btn">Buy Now</a>
 		</div>
-		<div class="top-box top-box-b">
+		<div class="top-box top-box-b" data-aos="fade-right">
 			<h4>Pro Membership</h4>
 			<p class="price">$249/mo</p>
 			<a href="#" class="btn">Buy Now</a>
@@ -44,28 +46,28 @@
 
 	<!-- start for boxes -->
 	<section id="boxes">
-		<div class="box">
+		<div class="box" data-aos="fade-down">
 			<i class="fas fa-chart-pie fa-4x"></i>
 			<h3>Analytics</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates commodi fuga quia quibusdam id voluptatum.
 			</p>
 		</div>
-		<div class="box">
+		<div class="box" data-aos="fade-down">
 			<i class="fas fa-globe fa-4x"></i>
 			<h3>Marketing</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates commodi fuga quia quibusdam id voluptatum.
 			</p>
 		</div>
-		<div class="box">
+		<div class="box" data-aos="fade-down">
 			<i class="fas fa-cog fa-4x"></i>
 			<h3>Development</h3>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates commodi fuga quia quibusdam id voluptatum.
 			</p>
 		</div>
-		<div class="box">
+		<div class="box" data-aos="fade-down">
 			<i class="fas fa-users fa-4x"></i>
 			<h3>Support</h3>
 			<p>
@@ -76,7 +78,7 @@
 	<!-- end for boxes -->
 
 	<!-- start for info -->
-	<section id="info">
+	<section id="info" data-aos="flip-up">
 		<img src="img/showcase.jpg" alt="">
 		<div>
 			<h2>Your Business On the web</h2>
@@ -106,7 +108,12 @@
 		Noushedul Islam Akib &copy; 2021
 	</footer>
 	<!-- end for footer -->
-
-
+	
+	<!-- aos animation js link  -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- initialize aos  -->
+	<script>
+		AOS.init();
+	  </script>
 </body>
 </html>
